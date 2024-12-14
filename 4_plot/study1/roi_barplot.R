@@ -58,7 +58,7 @@ data2plot <- dataO%>%pivot_longer(.,c('dmpfc','pgacc','vmpfc','tpjleft','tpjrigh
 data2plot <- adjustLab(data2plot, varnames,  c('dmpfc'='DmPFC','pgacc'='PgACC','tpjleft'='pTPJ (l)','tpjright'='pTPJ (r)','vmpfc'='VmPFC','Amy_Ce'='Amy-Ce','Amy_B'='Amy-B'))
 oplot = doPlot(data2plot,'beta',opcolours,c(-50,70),'Effect size (a.u.)')
 oplotfinal=ggarrange(oplot,  legend='none') 
-ggsave(paste('FigS5_opponents_roiplot_',Sys.Date(),'.pdf',sep=''),plot=oplotfinal,path=path_figs,dpi = 300, device = "pdf", height=5,width=7) 
+ggsave(paste('ExtData_Fig3a_opponents_roiplot_',Sys.Date(),'.pdf',sep=''),plot=oplotfinal,path=path_figs,dpi = 300, device = "pdf", height=5,width=7) 
 
 
 
@@ -81,10 +81,10 @@ data2plot <- adjustLab(data2plot, varnames,  c('dmpfc'='DmPFC','pgacc'='PgACC','
 dvplot = doPlot(data2plot,'beta',reds,c(-200,150),'Effect size (a.u.)')
 
 
-copeplotfinal=ggarrange(bplot,dvplot, ncol=1,nrow=2, labels=c('B','A'), align='hv', legend='none',
+copeplotfinal=ggarrange(bplot,dvplot, ncol=1,nrow=2, labels=c('g','e'), align='hv', legend='none',
                      font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica')) 
 
-ggsave(paste('FigS14_copeplot_roiplot_',Sys.Date(),'.pdf',sep=''),plot=copeplotfinal,path=path_figs,dpi = 300, device = "pdf", height=12,width=6) 
+ggsave(paste('ExtData_Fig6ge_copeplot_roiplot_',Sys.Date(),'.pdf',sep=''),plot=copeplotfinal,path=path_figs,dpi = 300, device = "pdf", height=12,width=6) 
 
 
 
@@ -113,10 +113,10 @@ data2plotpos <- data_pos%>%pivot_longer(.,c('data.S_timepos'),names_to=c('varnam
 data2plotpos <- adjustLab(data2plotpos, varnames,  c('data.S_timepos'='S-position'))
 posplot = doPlot(data2plotpos,'beta',yellow,c(-.25,.25),'Effect size (a.u.)')
 
-allbfplots=ggarrange(bfplot,posplot, ncol=2,nrow=1,widths = c(2,1), labels=c('A','B'), align='hv', legend='none',
+allbfplots=ggarrange(bfplot,posplot, ncol=2,nrow=1,widths = c(2,1), labels=c('b','c'), align='hv', legend='none',
                    font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica')) 
 
-ggsave(paste('FigS7_bf_roiplot_',Sys.Date(),'.pdf',sep=''),plot=allbfplots,path=path_figs,dpi = 300, device = "pdf", height=3,width=4) 
+ggsave(paste('ExtData_Fig3bc_bf_roiplot_',Sys.Date(),'.pdf',sep=''),plot=allbfplots,path=path_figs,dpi = 300, device = "pdf", height=3,width=4) 
 
 
 

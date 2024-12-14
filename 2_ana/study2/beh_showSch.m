@@ -68,7 +68,7 @@ for isch = 1:4
 end
 
 if doexport %  used to avoid overwriting existing files
-    saveas(gcf,[outfolderfigs 'FigS19_sch_illustration_detailed_' date])  
+    saveas(gcf,[outfolderfigs 'ExtData_Fig8ab_sch_illustration_detailed_' date])  
 end
 
 
@@ -119,7 +119,7 @@ subplot(3,7,17);
 heatmap(1,1:5,[1 2 3 4 5]','Colormap',deccols,'ColorbarVisible','off');
 
 if doexport %  used to avoid overwriting existing files
-    saveas(gcf,[outfolderfigs 'FigS4C_sch_illustration_summary_' date])
+    saveas(gcf,[outfolderfigs 'Fig4C_sch_illustration_summary_' date])
 end
 close all;
 

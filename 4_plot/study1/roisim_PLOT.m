@@ -79,7 +79,7 @@ for im = 1:numel(models)
 end
 
 setfp(gcf)
-saveas(gcf,[outfolder 'FigS9_bfsims_' date]);
+saveas(gcf,[outfolder 'ExtData_Fig5a-d_bfsims_' date]);
 
 
 

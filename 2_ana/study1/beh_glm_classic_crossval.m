@@ -73,7 +73,7 @@ xline(0,'-','alpha',.8,'Linewidth',2);
 setfp(gcf)
 
 % save:
-saveas(gcf,[outfolderfigs 'FigS16_beh_glm_classic_crossval_' date]);
+saveas(gcf,[outfolderfigs 'ExtData_Fig7c_beh_glm_classic_crossval_' date]); close all;
     
  
  

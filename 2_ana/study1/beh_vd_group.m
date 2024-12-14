@@ -124,7 +124,7 @@ set(gca,'xticklabel',{'S','P','G'});
 xlabel('Relative decision variable (in %)');
 ylabel('Beta (effect size)');
 setfp(gcf)   
-saveas(gcf,[outfolderfigs 'FigS4_vd_group_' date])
+saveas(gcf,[outfolderfigs 'ExtData_Fig2i-p_vd_group_' date]);close all
 
     
 

@@ -1,4 +1,4 @@
-function beh_glm_tempsubtle_su2Rev1(dec,outfolder)
+function beh_glm_tempsubtle(dec,outfolder)
 %  function for calculating GLM
 % MKW 2022
 %%

@@ -126,7 +126,7 @@ xl = xline(2,'--','avg Dec on','alpha',.8);         xl.LabelVerticalAlignment = 
 title('Measured Self-Position signal')
 
 % save:
-saveas(gcf,[outfolder '/FigS8_sim_selfPosition_' date]);
+saveas(gcf,[outfolder '/ExtData_Fig3d-f_sim_selfPosition_' date]);
     
     
     

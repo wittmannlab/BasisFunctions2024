@@ -80,8 +80,8 @@ saveas(gcf,[outfolder 'Fig3A_CM_' date]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 load('../../1_data/Data_study1_behav.mat');
 Xn   = {'pcode','scode', 'pcode_xF','scode_xF','bonus'};
-XN  ={'Primary basis','Secondary basis', 'Primary basis flipped','Secondary basis flipped','Bonus','(Primary basis flipped) x Choice', ...
-    '(Secondary basis  flipped) x Choice','Bonus x Choice'};
+XN  ={'Primary basis','Secondary basis', 'Inverted primary basis','Inverted secondary basis','Bonus','(Inverted primary basis) x Choice', ...
+    '(Inverted secondary basis) x Choice','Bonus x Choice'};
 CM  = [];
 %%% 1) calculate variables of interest 
 for is =1:numel(s.beh) 
@@ -103,7 +103,7 @@ end
 figure('Position',[100 100 400 120]);
 subplot(1,2,1); heatmap(XN,XN,round(mean(CM,3),2),'ColorLimits',[-1 1]); 
 setfp(gcf)
-saveas(gcf,[outfolder 'FigS12_CM_D22_DY1_' date]);
+saveas(gcf,[outfolder 'ExtData_Fig6a_CM_D22_DY1_' date]);
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

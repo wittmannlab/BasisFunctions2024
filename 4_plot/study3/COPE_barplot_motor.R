@@ -11,6 +11,7 @@ library(ggnewscale)
 
 # prep environment
 rm(list=ls()) # removes all variables
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 datapath='../../1_data'
 path_figs='../../5_figs/study3'
 dataSocialSpecifity   = read.csv(file.path(datapath, 'Data_study3_copes_socialSpecificity_13-Dec-2023.csv')) 
@@ -150,6 +151,6 @@ ggsave(paste('Fig5_MotorResults_',Sys.Date(),'.pdf',sep=''),plot=ALLPLOTS,path=p
 # 6. Combine and print - SUPPLEMENTARY FIGURE
 ##########################################################################################################################################################################
 supplot  =ggarrange(bfPlotpgacc, ncol=1,nrow=1,widths = c(1,1), align='hv', legend='none')
-ggsave(paste('FigS23_MotorResults_Supplements',Sys.Date(),'.pdf',sep=''),plot=supplot,path=path_figs,dpi = 300, device = "pdf", height=5,width=5) 
+ggsave(paste('ExtData_Fig10h_MotorResults_Supplements_',Sys.Date(),'.pdf',sep=''),plot=supplot,path=path_figs,dpi = 300, device = "pdf", height=5,width=5) 
 
 

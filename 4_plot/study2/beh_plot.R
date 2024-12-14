@@ -11,6 +11,7 @@ library(ggnewscale)
 
 # prep environment
 rm(list=ls()) # removes all variables
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 datapath='../../3_out/study2'
 path_figs='../../5_figs/study2'
 
@@ -133,7 +134,7 @@ ggsave(paste('Fig4DEFGHI_',Sys.Date(),'.pdf',sep=''),plot=MAINplot,dpi = 300, de
 
 
 
-SUPplot=ggarrange(corplots2,corplotp2,ncol=2,nrow=2,heights=c(1,1),widths = c(1,1), labels=c('A','B'),align='hv', 
+SUPplot=ggarrange(corplots2,corplotp2,ncol=2,nrow=2,heights=c(1,1),widths = c(1,1), labels=c('c','d'),align='hv', 
                   font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica'))  
 #SUPplot
-ggsave(paste('FIGS20_',Sys.Date(),'.pdf',sep=''),plot=SUPplot,path=path_figs,dpi = 300, device = "pdf") 
+ggsave(paste('ExtData_Fig8cd_',Sys.Date(),'.pdf',sep=''),plot=SUPplot,path=path_figs,dpi = 300, device = "pdf") 

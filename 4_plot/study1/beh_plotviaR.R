@@ -12,6 +12,7 @@ library(ggnewscale)
 
 # prep environment
 rm(list=ls()) # removes all variables
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 datapath='../../3_out/study1'
 path_figs='../../5_figs/study1'
 
@@ -86,10 +87,10 @@ rtplot = doPlot(data2plotrt,'RT',darks,c(.5,4),'Reaction time (in sec)')
 
 
 # arrange, plot and save:
-desc12plot=ggarrange(corplot,rtplot,ncol=2,nrow=1,heights=c(1,1), labels=c('A','B'),align='hv', 
+desc12plot=ggarrange(corplot,rtplot,ncol=2,nrow=1,heights=c(1,1), labels=c('g','h'),align='hv', 
                   font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica'))  
 
-ggsave(paste('FigS3_beh_desc_group12_',Sys.Date(),'.pdf',sep=''),plot=desc12plot,path=path_figs,dpi = 300, device = "pdf", height=3,width=7) 
+ggsave(paste('ExtData_Fig2gh_beh_desc_group12_',Sys.Date(),'.pdf',sep=''),plot=desc12plot,path=path_figs,dpi = 300, device = "pdf", height=3,width=7) 
 
 ##########################################################################################################################################################################
 # 2. Correlation RDM-part to decision making part
@@ -106,9 +107,9 @@ o2 = doCorPlot(data,"rdm",'Pre-Exp: Self',c(0.45,.8),"o2","Exp: O2",c(0.45,.8),'
 vds= doCorPlot(data,"rdm",'Pre-Exp: Self',c(0.45,.8),"swin","Exp: Self-win rate",c(0,1),yellows[2])
 vdg= doCorPlot(data,"rdm",'Pre-Exp: Self',c(0.45,.8),"gwin","Exp: Group-win rate",c(0,1),reds[2])
 
-corpls =ggarrange(ss,pp,o1,o2,vds,vdg, ncol=4,nrow=2, labels=c('A','B','C','D','E','F'),hjust = .05, align='hv', 
+corpls =ggarrange(ss,pp,o1,o2,vds,vdg, ncol=3,nrow=3, labels=c('a','b','c','d','e','f'),hjust = .05, align='hv', 
                   font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica'))  
-ggsave(paste('FigS2_beh_rdm2dec_',Sys.Date(),'.pdf',sep=''),plot=corpls,path=path_figs,dpi = 300, device = "pdf", height=6,width=12) 
+ggsave(paste('ExtData_Fig2a-f_beh_rdm2dec_',Sys.Date(),'.pdf',sep=''),plot=corpls,path=path_figs,dpi = 300, device = "pdf", height=10,width=12) 
 
 
 ##########################################################################################################################################################################
@@ -136,9 +137,9 @@ splot = doPlot(data2plots,'beta',yellows,c(-2,2),'Decision weight')
 pplot = doPlot(data2plotp,'beta',blues,c(-2,2),'Decision weight')
 gplot = doPlot(data2plotg,'beta',reds,c(-2,2),'Decision weight')
 
-glmplot=ggarrange(splot,pplot, gplot, ncol=3,nrow=1,heights=c(1,1),widths = c(1.5,1.5), labels=c('A','B','C'), align='hv',
+glmplot=ggarrange(splot,pplot, gplot, ncol=3,nrow=1,heights=c(1,1),widths = c(1.5,1.5), labels=c('d','e','f'), align='hv',
                    font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica')) 
-ggsave(paste('FigS17_beh_glm_group12_',Sys.Date(),'.pdf',sep=''),plot=glmplot,path=path_figs,dpi = 300, device = "pdf", height=3,width=9) 
+ggsave(paste('ExtData_Fig7d-f_beh_glm_group12_',Sys.Date(),'.pdf',sep=''),plot=glmplot,path=path_figs,dpi = 300, device = "pdf", height=3,width=9) 
 
 
 

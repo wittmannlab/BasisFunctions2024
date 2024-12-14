@@ -12,6 +12,7 @@ library(ggnewscale)
 
 # prep environment
 rm(list=ls()) # removes all variables
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 datapath='../../3_out/study4'
 path_figs='../../5_figs/study4'
 
@@ -104,9 +105,9 @@ POS4 = doBarPlot(data=data2plot%>%filter(varnames=='Pos4'),vars='beta',cols=col,
 #                     font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica')) 
 
 # make plot with everything and print
-s2btplot = ggarrange(FREQUENCY, RATING, POS3, POS4,ncol=2,nrow=2,heights=c(1,1),widths = c(1,1), labels=c('B','C','D','E'), 
+s2btplot = ggarrange(FREQUENCY, RATING, POS3, POS4,ncol=2,nrow=2,heights=c(1,1),widths = c(1,1), labels=c('b','c','d','e'), 
                      font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica'),common.legend = T, legend = 'right') 
-ggsave(paste('FigS6_',Sys.Date(),'.pdf',sep=''),plot=s2btplot,path=path_figs,dpi = 300, device = "pdf", height=7,width=6) 
+ggsave(paste('ExtData_Fig4_',Sys.Date(),'.pdf',sep=''),plot=s2btplot,path=path_figs,dpi = 300, device = "pdf", height=7,width=6) 
 
 
 
