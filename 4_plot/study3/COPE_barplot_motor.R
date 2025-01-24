@@ -151,6 +151,6 @@ ggsave(paste('Fig5_MotorResults_',Sys.Date(),'.pdf',sep=''),plot=ALLPLOTS,path=p
 # 6. Combine and print - SUPPLEMENTARY FIGURE
 ##########################################################################################################################################################################
 supplot  =ggarrange(bfPlotpgacc, ncol=1,nrow=1,widths = c(1,1), align='hv', legend='none')
-ggsave(paste('ExtData_Fig10h_MotorResults_Supplements_',Sys.Date(),'.pdf',sep=''),plot=supplot,path=path_figs,dpi = 300, device = "pdf", height=5,width=5) 
+ggsave(paste('ExtData_Fig12h_MotorResults_Supplements_',Sys.Date(),'.pdf',sep=''),plot=supplot,path=path_figs,dpi = 300, device = "pdf", height=5,width=5) 
 
 

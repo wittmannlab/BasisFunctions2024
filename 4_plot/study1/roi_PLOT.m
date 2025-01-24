@@ -103,7 +103,7 @@ end
 figure('Position',[100 100 400 120]);
 subplot(1,2,1); heatmap(XN,XN,round(mean(CM,3),2),'ColorLimits',[-1 1]); 
 setfp(gcf)
-saveas(gcf,[outfolder 'ExtData_Fig6a_CM_D22_DY1_' date]);
+saveas(gcf,[outfolder 'ExtData_Fig7a_CM_D22_DY1_' date]);
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

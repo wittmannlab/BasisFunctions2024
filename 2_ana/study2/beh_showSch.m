@@ -68,7 +68,7 @@ for isch = 1:4
 end
 
 if doexport %  used to avoid overwriting existing files
-    saveas(gcf,[outfolderfigs 'ExtData_Fig8ab_sch_illustration_detailed_' date])  
+    saveas(gcf,[outfolderfigs 'ExtData_Fig10ab_sch_illustration_detailed_' date])  
 end
 
 

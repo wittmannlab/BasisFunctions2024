@@ -58,7 +58,7 @@ g.set_names('x','','y','Beta (impact on log-RT)');
 g.set_text_options('base_size',fsize);
 g.draw();
 
-saveas(gcf,[outfolder 'ExtData_Fig7hi_beh_glm_tempsubtle_' date]);
+saveas(gcf,[outfolder 'ExtData_Fig9ef_beh_glm_tempsubtle_' date]);
 
 
 

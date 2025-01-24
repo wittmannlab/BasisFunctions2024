@@ -26,9 +26,9 @@ end
 %%% 2.) Analyse experimental data
 %%------------------------------
 doexport = 1;
-beh_showSch_online2(s.beh,doexport,outfolder)               % for ExtData_Fig4 output PosFrequency         plotted via plot_online2.R
-beh_posRating(s.beh,doexport,outfolder)                     % for ExtData_Fig4 output PosRating            plotted via plot_online2.R
-beh_glmpos(s.beh,doexport,outfolder);                       % for ExtData_Fig4 output GLMpos               plotted via plot_online2.R
+beh_showSch_online2(s.beh,doexport,outfolder)               % for ExtData_Fig5 output PosFrequency         plotted via plot_online2.R
+beh_posRating(s.beh,doexport,outfolder)                     % for ExtData_Fig5 output PosRating            plotted via plot_online2.R
+beh_glmpos(s.beh,doexport,outfolder);                       % for ExtData_Fig5 output GLMpos               plotted via plot_online2.R
 
 % note: the above scripts export data that is then mostly analysed in JASP and plotted in R.
 

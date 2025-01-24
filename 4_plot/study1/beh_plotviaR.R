@@ -87,10 +87,10 @@ rtplot = doPlot(data2plotrt,'RT',darks,c(.5,4),'Reaction time (in sec)')
 
 
 # arrange, plot and save:
-desc12plot=ggarrange(corplot,rtplot,ncol=2,nrow=1,heights=c(1,1), labels=c('g','h'),align='hv', 
+desc12plot=ggarrange(corplot,rtplot,ncol=2,nrow=1,heights=c(1,1), labels=c('a','b'),align='hv', 
                   font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica'))  
 
-ggsave(paste('ExtData_Fig2gh_beh_desc_group12_',Sys.Date(),'.pdf',sep=''),plot=desc12plot,path=path_figs,dpi = 300, device = "pdf", height=3,width=7) 
+ggsave(paste('ExtData_Fig3ab_beh_desc_group12_',Sys.Date(),'.pdf',sep=''),plot=desc12plot,path=path_figs,dpi = 300, device = "pdf", height=3,width=7) 
 
 ##########################################################################################################################################################################
 # 2. Correlation RDM-part to decision making part
@@ -137,9 +137,9 @@ splot = doPlot(data2plots,'beta',yellows,c(-2,2),'Decision weight')
 pplot = doPlot(data2plotp,'beta',blues,c(-2,2),'Decision weight')
 gplot = doPlot(data2plotg,'beta',reds,c(-2,2),'Decision weight')
 
-glmplot=ggarrange(splot,pplot, gplot, ncol=3,nrow=1,heights=c(1,1),widths = c(1.5,1.5), labels=c('d','e','f'), align='hv',
+glmplot=ggarrange(splot,pplot, gplot, ncol=3,nrow=1,heights=c(1,1),widths = c(1.5,1.5), labels=c('a','b','c'), align='hv',
                    font.label = list(size = 30, color = "black", face = "bold", family = 'Helvetica')) 
-ggsave(paste('ExtData_Fig7d-f_beh_glm_group12_',Sys.Date(),'.pdf',sep=''),plot=glmplot,path=path_figs,dpi = 300, device = "pdf", height=3,width=9) 
+ggsave(paste('ExtData_Fig9a-c_beh_glm_group12_',Sys.Date(),'.pdf',sep=''),plot=glmplot,path=path_figs,dpi = 300, device = "pdf", height=3,width=9) 
 
 
 

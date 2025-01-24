@@ -116,7 +116,7 @@ g.set_names('x','Reaction time','y','Beta (effect size)','lightness','Informatio
 g.set_text_options('base_size',fsize);
 g.draw();
 
-saveas(gcf,[outfolder 'ExtData_Fig7ab_beh_glm_temp_rtsplit_' date]);
+saveas(gcf,[outfolder 'ExtData_Fig8ab_beh_glm_temp_rtsplit_' date]);
 
 
 

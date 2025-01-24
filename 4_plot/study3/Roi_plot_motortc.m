@@ -47,7 +47,7 @@ for ir = 1:numel(nam)
 
 end
 setfp(gcf)
-saveas(gcf,[outfolder 'ExtData_Fig10i-k_timecourse_' date]);
+saveas(gcf,[outfolder 'ExtData_Fig12i-k_timecourse_' date]);
 
 
 

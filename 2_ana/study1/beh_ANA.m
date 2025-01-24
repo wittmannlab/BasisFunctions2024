@@ -27,18 +27,18 @@ end
 beh_desc(s.beh,outfolder);                              % for fig1,c,d,         output: beh_desc                plot via 4_plot/study2/beh_PLOT_selfbias.m (for both study 1+2)
 beh_order(s.beh,outfolder);                             % for fig2a             output: beh_order,              plot via beh_PLOT.m
 beh_glm_classic(s.beh,outfolder);                       % for fig3,j,k:         output: beh_glm_classic         plot via beh_PLOT.m
-beh_glm_temp_rtsplit(s.beh,outfolder);                  % for ExtData_Fig7ab    output: beh_glm_temp_rtsplit    plot via beh_PLOT.m
-beh_glm_tempsubtle(s.beh,outfolder);                    % for ExtData_Fig7hi    output: beh_glm_tempsubtle_rts, plotted via: •	4_plot/study2/beh_PLOTsubtle.m (for both study 1+2)
+beh_glm_temp_rtsplit(s.beh,outfolder);                  % for ExtData_Fig8ab    output: beh_glm_temp_rtsplit    plot via beh_PLOT.m
+beh_glm_tempsubtle(s.beh,outfolder);                    % for ExtData_Fig9ef    output: beh_glm_tempsubtle_rts, plotted via: •	4_plot/study2/beh_PLOTsubtle.m (for both study 1+2)
 
 % simulations (directly printed into figs folder)
 beh_sim(s,outfolderfigs)                                % for fig3I outputs figure directly: glmsims, 
 
 % Additional behavioural analyses:
 beh_rdm2dec(s.beh,rdm,outfolder)                        % for ExtData_Fig2a-f   output: beh_rdm2dec              plot via beh_plotvia.R
-beh_desc_group12(s.beh,outfolder);                      % for ExtData_Fig2gh    output: beh_desc_group12         plot via beh_plotvia.R
-beh_glm_group12(s.beh,outfolder);                       % for ExtData_Fig7d-f   output: beh_glm_group12          plot via beh_plotvia.R
-beh_vd_group(s.beh,outfolder,outfolderfigs);            % for ExtData_Fig2i-p   output: directly prints the figure but also beh_vd_group
-beh_glm_classic_crossval(s.beh,outfolder,outfolderfigs);% for ExtData_Fig7c     output: directly prints the figure but also beh_glm_crossval
+beh_desc_group12(s.beh,outfolder);                      % for ExtData_Fig3ab    output: beh_desc_group12         plot via beh_plotvia.R
+beh_glm_group12(s.beh,outfolder);                       % for ExtData_Fig9a-c   output: beh_glm_group12          plot via beh_plotvia.R
+beh_vd_group(s.beh,outfolder,outfolderfigs);            % for ExtData_Fig3c-j   output: directly prints the figure but also beh_vd_group
+beh_glm_classic_crossval(s.beh,outfolder,outfolderfigs);% for ExtData_Fig8c     output: directly prints the figure but also beh_glm_crossval
 
 
 
